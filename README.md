@@ -4,7 +4,14 @@ Togg implements feature toggle for Ruby on Rails applications. Martin Fowler has
 http://martinfowler.com/bliki/FeatureToggle.html
 
 ## Usage ##
-Simply create a YAML configuration file that lists your application features, then wrap your feature-specific code in blocks.
+
+Include `togg` in the Gemfile for your Rails 3 application:
+
+```ruby
+gem 'togg'
+```
+
+To use `togg`, simply create a YAML configuration file that lists your application features, then wrap your feature-specific code in blocks.
 
 ## Example ##
 
@@ -40,4 +47,4 @@ Togg.le(:some_pending_feature) do
 end
 ```
 
-The features with keys that evaluate to `true` in your yaml file get executed, and the others don't
+The features with keys that evaluate to `true` in your yaml file get executed, and the others don't.
