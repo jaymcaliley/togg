@@ -1,0 +1,18 @@
+defaults: &defaults
+  some_active_feature: true
+  some_pending_feature: false
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+demo:
+  <<: *defaults
