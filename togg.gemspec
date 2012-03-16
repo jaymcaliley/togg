@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "A simple manager for feature toggling"
   s.description = "Togg implements a simple feature toggler for a Rails application. Features are managed in a yaml configuration file, then wrapped in a toggle block."
 
-  s.files = Dir["{app,config,db,lib}/**/**/*"] + ["MIT-LICENSE", "Rakefile"]
+  s.files = Dir["{lib}/**/**/*"] + ["LICENSE.txt"]
   s.test_files = Dir["test_app/**/*"]
 
   s.add_dependency "yettings"
