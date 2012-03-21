@@ -15,7 +15,7 @@ To use `togg`, simply create a YAML configuration file that lists your applicati
 
 ## Example ##
 
-The settings file is base on the `yettings` gem:
+The settings file is based on the `yettings` gem. You define features for each of your Rails environments:
 
 ```yaml
 # File: config/yettings/togg.yml
@@ -34,7 +34,7 @@ production:
   <<: *defaults
 ```
 
-In your Rails application, wrap feature-specific code like this:
+Then, in your Rails application, wrap feature-specific code like this:
 
 ```ruby
 
